@@ -1,0 +1,14 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node start.js",
+    "dev": "node --watch start.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22.13"
+  }
+}

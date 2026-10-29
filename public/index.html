@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Shorten a URL</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Shorten a URL</h1>
+    <p class="subtitle">Paste a long link and get a short one back.</p>
+
+    <form id="form" novalidate>
+      <label for="url" class="visually-hidden">Long URL</label>
+      <input id="url" name="url" type="url" inputmode="url" autocomplete="off"
+             placeholder="https://example.com/a/very/long/link" required autofocus>
+      <button type="submit" id="submit">Shorten</button>
+    </form>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <section id="result" class="result" hidden>
+      <a id="short-link" href="#" target="_blank" rel="noopener"></a>
+      <button type="button" id="copy" class="secondary">Copy</button>
+    </section>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
